@@ -15,6 +15,7 @@ finish-args:
   ## Needed for custom paths and restoring saves
   - --filesystem=home
   - --filesystem=/run/media/
+  - --filesystem=/media/
   ## GPU acceration
   - --device=dri
   ## Fix for GUI being to large on the steam deck
