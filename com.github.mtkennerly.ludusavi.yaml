@@ -7,7 +7,6 @@ sdk-extensions:
   - org.freedesktop.Sdk.Extension.llvm14
 build-options:
   append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin
-  # append-path: /usr/lib/sdk/llvm14/bin
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
 finish-args:
