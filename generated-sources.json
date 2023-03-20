@@ -1419,19 +1419,6 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
-        "url": "https://static.crates.io/crates/flexi_logger/flexi_logger-0.23.1.crate",
-        "sha256": "b9907f32995cb751ef3e4451ffdbd9f0aa6f503365fdbb9feed9e2ae087cb50d",
-        "dest": "cargo/vendor/flexi_logger-0.23.1"
-    },
-    {
-        "type": "inline",
-        "contents": "{\"package\": \"b9907f32995cb751ef3e4451ffdbd9f0aa6f503365fdbb9feed9e2ae087cb50d\", \"files\": {}}",
-        "dest": "cargo/vendor/flexi_logger-0.23.1",
-        "dest-filename": ".cargo-checksum.json"
-    },
-    {
-        "type": "archive",
-        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/float-ord/float-ord-0.2.0.crate",
         "sha256": "7bad48618fdb549078c333a7a8528acb57af271d0433bdecd523eb620628364e",
         "dest": "cargo/vendor/float-ord-0.2.0"
