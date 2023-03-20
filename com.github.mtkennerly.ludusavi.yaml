@@ -1,11 +1,12 @@
 app-id: com.github.mtkennerly.ludusavi
 runtime: org.freedesktop.Platform
-runtime-version: "21.08"
+runtime-version: "22.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
+  - org.freedesktop.Sdk.Extension.llvm14
 build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin
+  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
 finish-args:
@@ -15,6 +16,9 @@ finish-args:
   ## Needed for custom paths and restoring saves
   - --filesystem=home
   - --filesystem=/run/media/
+  - --filesystem=/media/
+  ### Neccecary for Steam flatpak
+  - --filesystem=/var/home/
   ## GPU acceration
   - --device=dri
   ## Fix for GUI being to large on the steam deck
@@ -39,7 +43,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        commit: 6b94d4b0ce8642efea96b9b9729d17613d3c266b
+        tag: v0.16.0
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
