@@ -17,11 +17,13 @@ finish-args:
   - --filesystem=home
   - --filesystem=/run/media/
   - --filesystem=/media/
-  ### Neccecary for Steam flatpak
+  ### Necessary for Steam flatpak
   - --filesystem=/var/home/
-  ## GPU acceration
+  ### Necessary for Heroic flatpak
+  - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
+  ## GPU acceleration
   - --device=dri
-  ## Fix for GUI being to large on the steam deck
+  ## Fix for GUI being too large on the steam deck
   - --env=WINIT_X11_SCALE_FACTOR=1
 command: ludusavi
 modules:
