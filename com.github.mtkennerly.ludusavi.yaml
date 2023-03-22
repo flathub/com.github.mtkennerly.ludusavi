@@ -19,6 +19,8 @@ finish-args:
   - --filesystem=/media/
   ### Neccecary for Steam flatpak
   - --filesystem=/var/home/
+  ### Necessary for Heroic flatpak
+  - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
   ## GPU acceration
   - --device=dri
   ## Fix for GUI being to large on the steam deck
