@@ -45,7 +45,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        commit: dbb59b798212f5f8d183ecff3e2897996d14340d
+        commit: d83ac8107bfae3d8032b21e0267a6862dc243381
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
