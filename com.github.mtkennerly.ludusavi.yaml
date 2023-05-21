@@ -21,6 +21,8 @@ finish-args:
   - --filesystem=/var/home/
   ### Necessary for Heroic flatpak
   - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
+  ### Necessary for Lutris flatpak
+  - --filesystem=~/.var/app/net.lutris.Lutris
   ## GPU acceleration
   - --device=dri
   ## Fix for GUI being too large on the steam deck
