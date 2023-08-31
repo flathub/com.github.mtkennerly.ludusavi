@@ -9,7 +9,7 @@ build-options:
   append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
-    LUDUSAVI_VERSION: 0.21.0-post.3+bf3a847
+    LUDUSAVI_VERSION: 0.21.0-post.4+1af8e5e
 finish-args:
   - --socket=fallback-x11
   - --socket=wayland
@@ -46,7 +46,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        commit: bf3a84714d0d3e00bc800b61b470b1ee5d2c89c1
+        commit: 1af8e5e9432965b3965f0c6d65a049776c304f35
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
