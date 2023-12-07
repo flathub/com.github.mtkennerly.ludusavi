@@ -18,7 +18,7 @@ finish-args:
   - --filesystem=/run/media/
   - --filesystem=/media/
   ### Necessary for Steam flatpak
-  - --filesystem=/var/home/
+  - --filesystem=~/.var/app/com.valvesoftware.Steam
   ### Necessary for Heroic flatpak
   - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
   ### Necessary for Lutris flatpak
