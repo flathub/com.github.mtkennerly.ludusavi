@@ -17,12 +17,13 @@ finish-args:
   - --filesystem=home
   - --filesystem=/run/media/
   - --filesystem=/media/
-  ### Necessary for Steam flatpak
+  ### Necessary for built-in integration with other apps
   - --filesystem=~/.var/app/com.valvesoftware.Steam
-  ### Necessary for Heroic flatpak
   - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
-  ### Necessary for Lutris flatpak
   - --filesystem=~/.var/app/net.lutris.Lutris
+  ### Aside from those apps that Ludusavi automatically supports,
+  ### users commonly want to back up data from other apps as well.
+  - --filesystem=~/.var/app/
   ## GPU acceleration
   - --device=dri
   ## Fix for GUI being too large on the steam deck
