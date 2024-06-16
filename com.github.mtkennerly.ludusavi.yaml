@@ -1,6 +1,6 @@
 app-id: com.github.mtkennerly.ludusavi
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -48,7 +48,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        tag: v0.24.0+flatpak
+        tag: v0.24.1
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
