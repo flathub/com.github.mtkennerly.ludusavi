@@ -13,6 +13,7 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --share=network
+  - --share=ipc
   ## Needed for custom paths and restoring saves
   - --filesystem=home
   - --filesystem=/run/media/
