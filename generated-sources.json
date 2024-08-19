@@ -4734,6 +4734,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/semver/semver-1.0.23.crate",
+        "sha256": "61697e0a1c7e512e84a621326239844a24d8207b4669b41bc18b32ea5cbf988b",
+        "dest": "cargo/vendor/semver-1.0.23"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"61697e0a1c7e512e84a621326239844a24d8207b4669b41bc18b32ea5cbf988b\", \"files\": {}}",
+        "dest": "cargo/vendor/semver-1.0.23",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/serde/serde-1.0.197.crate",
         "sha256": "3fb1c873e1b9b056a4dc4c0c198b24c3ffa059243875552b2bd0933b1aee4ce2",
         "dest": "cargo/vendor/serde-1.0.197"
