@@ -13,6 +13,7 @@ finish-args:
   - --socket=x11
   - --socket=wayland
   - --share=network
+  - --share=ipc
   ## Needed for custom paths and restoring saves
   - --filesystem=home
   - --filesystem=/run/media/
@@ -48,7 +49,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        tag: v0.24.3
+        tag: v0.25.0
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
