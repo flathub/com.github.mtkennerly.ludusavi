@@ -1,30 +1,34 @@
 app-id: com.github.mtkennerly.ludusavi
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "23.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm14
+  - org.freedesktop.Sdk.Extension.llvm16
 build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm14/bin
+  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm16/bin
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
     LUDUSAVI_VERSION: 0.21.0-post.5+8d41b2e
 finish-args:
-  - --socket=fallback-x11
+  - --socket=x11
   - --socket=wayland
   - --share=network
+  - --share=ipc
   ## Needed for custom paths and restoring saves
   - --filesystem=home
   - --filesystem=/run/media/
   - --filesystem=/media/
-  ### Neccecary for Steam flatpak
-  - --filesystem=/var/home/
-  ### Necessary for Heroic flatpak
+  ### Necessary for built-in integration with other apps
+  - --filesystem=~/.var/app/com.valvesoftware.Steam
   - --filesystem=~/.var/app/com.heroicgameslauncher.hgl
-  ## GPU acceration
+  - --filesystem=~/.var/app/net.lutris.Lutris
+  ### Aside from those apps that Ludusavi automatically supports,
+  ### users commonly want to back up data from other apps as well.
+  - --filesystem=~/.var/app/
+  ## GPU acceleration
   - --device=dri
-  ## Fix for GUI being to large on the steam deck
+  ## Fix for GUI being too large on the steam deck
   - --env=WINIT_X11_SCALE_FACTOR=1
 command: ludusavi
 modules:
@@ -46,7 +50,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/mtkennerly/ludusavi
-        commit: 8d41b2e88b41dfc9d344d905c78cebfd1a75c7ba
+        commit: 1x
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/mtkennerly/ludusavi/latest
