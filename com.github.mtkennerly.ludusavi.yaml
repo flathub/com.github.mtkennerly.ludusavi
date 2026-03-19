@@ -66,10 +66,11 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/rclone/rclone/releases/download/v1.69.1/rclone-v1.69.1-linux-amd64.zip
-        sha256: 231841f8d8029ae6cfca932b601b3b50d0e2c3c2cb9da3166293f1c3eae7d79c
+        url: https://github.com/rclone/rclone/releases/download/v1.73.2/rclone-v1.73.2-linux-amd64.zip
+        sha256: 00a1d8cb85552b7b07bb0416559b2e78fcf9c6926662a52682d81b5f20c90535
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/rclone/rclone/releases/download/v1.69.1/rclone-v1.69.1-linux-arm64.zip
-        sha256: a03de8f700fcda7a1aef6b568f88d44218b698fb4e1637596c024d341bb24124
+        url: https://github.com/rclone/rclone/releases/download/v1.73.2/rclone-v1.73.2-linux-arm64.zip
+        sha256: 2f7d8b807e6ea638855129052c834ca23aa538d3ad7786e30b8ad1e97c5db47b
+
