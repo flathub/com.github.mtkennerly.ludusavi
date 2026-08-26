@@ -11,6 +11,7 @@ build-options:
     CARGO_HOME: /run/build/ludusavi/cargo
 finish-args:
   - --socket=wayland
+  - --socket=fallback-x11
   - --share=network
   - --share=ipc
   ## Needed for custom paths and restoring saves
