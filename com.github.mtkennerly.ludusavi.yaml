@@ -10,7 +10,6 @@ build-options:
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
 finish-args:
-  - --socket=x11
   - --socket=wayland
   - --share=network
   - --share=ipc
