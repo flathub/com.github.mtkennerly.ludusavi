@@ -1,12 +1,12 @@
 app-id: com.github.mtkennerly.ludusavi
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "26.08"
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
-  - org.freedesktop.Sdk.Extension.llvm19
+  - org.freedesktop.Sdk.Extension.llvm22
 build-options:
-  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm19/bin
+  append-path: /usr/lib/sdk/rust-stable/bin:/usr/lib/sdk/llvm22/bin
   env:
     CARGO_HOME: /run/build/ludusavi/cargo
 finish-args:
@@ -66,11 +66,11 @@ modules:
       - type: archive
         only-arches:
           - x86_64
-        url: https://github.com/rclone/rclone/releases/download/v1.73.2/rclone-v1.73.2-linux-amd64.zip
-        sha256: 00a1d8cb85552b7b07bb0416559b2e78fcf9c6926662a52682d81b5f20c90535
+        url: https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-amd64.zip
+        sha256: 349ac8fba6ff65d6247043f1750cdcb518ec5d500ef91463a10d37c0ccdf3702
       - type: archive
         only-arches:
           - aarch64
-        url: https://github.com/rclone/rclone/releases/download/v1.73.2/rclone-v1.73.2-linux-arm64.zip
-        sha256: 2f7d8b807e6ea638855129052c834ca23aa538d3ad7786e30b8ad1e97c5db47b
+        url: https://github.com/rclone/rclone/releases/download/v1.75.2/rclone-v1.75.2-linux-arm64.zip
+        sha256: 7e1e8d69654941b7b7df84ee74c5f7fb09cce7d5496947fb7bf16b55ff427d10
 
